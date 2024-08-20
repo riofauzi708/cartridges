@@ -1,0 +1,149 @@
+.featured-products {
+    background-color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    /* Improved color for better readability */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Added shadow for depth */
+}
+
+.carousel-item img {
+    width: auto;
+    height: 150px;
+    /* Fixed height for consistent image sizes */
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.carousel-item .product-code {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.7rem;
+}
+
+.carousel-item .price {
+    font-size: 1.4rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.carousel-item .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.carousel-control {
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control img {
+    width: 100px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.carousel-control:hover img {
+    filter: brightness(1) sepia(1) saturate(5) hue-rotate(-10deg);
+}
+
+
+.prev {
+    left: -60px;
+}
+
+.next {
+    right: -60px;
+}
+
+.btn-add {
+    background-color: #FF9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* Improved readability */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.btn-add:hover {
+    background-color: #e68a00;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 250px;
+    }
+
+    .carousel-control {
+        display: none;
+        /* Hide controls on smaller screens for a cleaner look */
+    }
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    /* Added border for separation */
+    color: #555;
+    /* Adjusted text color for better contrast */
+}
